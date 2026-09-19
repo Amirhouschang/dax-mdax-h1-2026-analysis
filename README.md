@@ -65,7 +65,7 @@ Top 5 / bottom 5 sectors by return for the selected index, plus a matrix compari
 #### 5. Sector Explorer (MDAX)
 Same page as above, with the index slicer switched to MDAX — shows MDAX's own top/bottom performing sectors while the matrix at the bottom keeps both indices visible.
 
-![Sector Explorer detail](images/05-sector-explorer-mdax.png)
+![Sector Explorer detail](images/04-sector-explorer-mdax.png)
 
 #### 6. Company Explorer
 Full company-level table filterable by index, sector, and company, plus top 5 / bottom 5 performer charts.
