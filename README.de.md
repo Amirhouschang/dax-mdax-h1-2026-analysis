@@ -60,12 +60,12 @@ Anteil der Unternehmen mit positiver H1-Rendite, Index-Rendite vs. Median-Rendit
 #### 4. Sector Explorer (DAX)
 Top 5 / Bottom 5 Sektoren nach Rendite für den ausgewählten Index, plus eine Matrix, die Rendite und Marktanteil je Sektor für DAX und MDAX nebeneinander vergleicht. Index-Slicer auf DAX gesetzt.
 
-![Sector Explorer](images/04-sector-explorer.png)
+![Sector Explorer](images/04-sector-explorer-dax.png)
 
 #### 5. Sector Explorer (MDAX)
 Dieselbe Seite wie oben, mit dem Index-Slicer auf MDAX umgeschaltet — zeigt die eigenen Top/Bottom-Sektoren des MDAX, während die Matrix unten weiterhin beide Indizes zeigt.
 
-![Sector Explorer Detail](images/05-sector-explorer-detail.png)
+![Sector Explorer Detail](images/04-sector-explorer-mdax.png)
 
 #### 6. Company Explorer
 Vollständige Unternehmenstabelle, filterbar nach Index, Sektor und Unternehmen, plus Top-5-/Bottom-5-Performer-Diagramme.
