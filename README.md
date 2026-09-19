@@ -60,12 +60,12 @@ Share of companies with a positive H1 return, index return vs. median company re
 #### 4. Sector Explorer (DAX)
 Top 5 / bottom 5 sectors by return for the selected index, plus a matrix comparing return and market share by sector across DAX and MDAX side by side. Index slicer set to DAX.
 
-![Sector Explorer](images/04-sector-explorer.png)
+![Sector Explorer](images/04-sector-explorer-dax.png)
 
 #### 5. Sector Explorer (MDAX)
 Same page as above, with the index slicer switched to MDAX — shows MDAX's own top/bottom performing sectors while the matrix at the bottom keeps both indices visible.
 
-![Sector Explorer detail](images/05-sector-explorer-detail.png)
+![Sector Explorer detail](images/05-sector-explorer-mdax.png)
 
 #### 6. Company Explorer
 Full company-level table filterable by index, sector, and company, plus top 5 / bottom 5 performer charts.
