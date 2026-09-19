@@ -1,0 +1,91 @@
+ticker,name,sector,index_group,as_of_date
+ADS.DE,Adidas,Apparel,DAX,2026-06-30
+AIR.PA,Airbus,Aerospace & Defence,DAX,2026-06-30
+ALV.DE,Allianz,Financial Services,DAX,2026-06-30
+BAS.DE,BASF,Chemicals,DAX,2026-06-30
+BAYN.DE,Bayer,Pharmaceuticals,DAX,2026-06-30
+BEI.DE,Beiersdorf,Consumer Goods,DAX,2026-06-30
+BMW.DE,BMW,Automotive,DAX,2026-06-30
+BNR.DE,Brenntag,Distribution,DAX,2026-06-30
+CBK.DE,Commerzbank,Financial Services,DAX,2026-06-30
+CON.DE,Continental,Automotive,DAX,2026-06-30
+DTG.DE,Daimler Truck,Automotive,DAX,2026-06-30
+DBK.DE,Deutsche Bank,Financial Services,DAX,2026-06-30
+DB1.DE,Deutsche Boerse,Financial Services,DAX,2026-06-30
+DHL.DE,Deutsche Post,Logistics,DAX,2026-06-30
+DTE.DE,Deutsche Telekom,Telecommunication,DAX,2026-06-30
+EOAN.DE,E.ON,Utilities,DAX,2026-06-30
+FRE.DE,Fresenius,Healthcare,DAX,2026-06-30
+FME.DE,Fresenius Medical Care,Healthcare,DAX,2026-06-30
+G1A.DE,GEA Group,Mechanical Engineering,DAX,2026-06-30
+HNR1.DE,Hannover Re,Insurance,DAX,2026-06-30
+HEI.DE,Heidelberg Materials,Construction Materials,DAX,2026-06-30
+HEN3.DE,Henkel,Consumer Goods,DAX,2026-06-30
+IFX.DE,Infineon Technologies,Technology,DAX,2026-06-30
+MBG.DE,Mercedes-Benz Group,Automotive,DAX,2026-06-30
+MRK.DE,Merck,Pharmaceuticals,DAX,2026-06-30
+MTX.DE,MTU Aero Engines,Aerospace & Defence,DAX,2026-06-30
+MUV2.DE,Munich Re,Financial Services,DAX,2026-06-30
+HOT.DE,Hochtief,Construction,DAX,2026-06-30
+QIA.DE,Qiagen,Biotech,DAX,2026-06-30
+RHM.DE,Rheinmetall,Aerospace & Defence,DAX,2026-06-30
+RWE.DE,RWE,Utilities,DAX,2026-06-30
+SAP.DE,SAP,Technology,DAX,2026-06-30
+G24.DE,Scout24,E-Commerce,DAX,2026-06-30
+SIE.DE,Siemens,Industrials,DAX,2026-06-30
+ENR.DE,Siemens Energy,Energy Technology,DAX,2026-06-30
+SHL.DE,Siemens Healthineers,Medical Equipment,DAX,2026-06-30
+SY1.DE,Symrise,Chemicals,DAX,2026-06-30
+VOW3.DE,Volkswagen Group,Automotive,DAX,2026-06-30
+VNA.DE,Vonovia,Real Estate,DAX,2026-06-30
+ZAL.DE,Zalando,E-Commerce,DAX,2026-06-30
+P911.DE,Porsche AG,Automotive,MDAX,2026-06-30
+PAH3.DE,Porsche SE,Automotive,MDAX,2026-06-30
+TLX.DE,Talanx,Financial Services,MDAX,2026-06-30
+8TRA.DE,Traton,Automotive,MDAX,2026-06-30
+KBX.DE,Knorr-Bremse,Industrials,MDAX,2026-06-30
+SRT3.DE,Sartorius,Biotech,MDAX,2026-06-30
+DWS.DE,DWS Group,Financial Services,MDAX,2026-06-30
+DHER.DE,Delivery Hero,E-Commerce,MDAX,2026-06-30
+TKA.DE,Thyssenkrupp,Industrials,MDAX,2026-06-30
+NDX1.DE,Nordex,Renewable Energy,MDAX,2026-06-30
+LHA.DE,Lufthansa,Airlines,MDAX,2026-06-30
+HAG.DE,Hensoldt,Defence,MDAX,2026-06-30
+EVK.DE,Evonik Industries,Chemicals,MDAX,2026-06-30
+HLE.DE,Hella,Automotive,MDAX,2026-06-30
+NDA.DE,Aurubis,Metals,MDAX,2026-06-30
+NEM.DE,Nemetschek,Software,MDAX,2026-06-30
+RAA.DE,Rational,Manufacturing,MDAX,2026-06-30
+SHA0.DE,Schaeffler,Automotive,MDAX,2026-06-30
+FRA.DE,Fraport,Airport Operator,MDAX,2026-06-30
+KGX.DE,KION Group,Industrials,MDAX,2026-06-30
+EVD.DE,CTS Eventim,Leisure & Events,MDAX,2026-06-30
+TKMS.DE,TKMS,Defence,MDAX,2026-06-30
+FPE3.DE,Fuchs,Chemicals,MDAX,2026-06-30
+RRTL.DE,RTL Group,Media,MDAX,2026-06-30
+UTDI.DE,United Internet,Telecommunication,MDAX,2026-06-30
+IOS.DE,IONOS Group,IT Services,MDAX,2026-06-30
+BC8.DE,Bechtle,IT Services,MDAX,2026-06-30
+WCH.DE,Wacker Chemie,Chemicals,MDAX,2026-06-30
+AG1.DE,Auto1 Group,E-Commerce,MDAX,2026-06-30
+R3NK.DE,Renk Group,Defence,MDAX,2026-06-30
+AIXA.DE,Aixtron,Semiconductor Equipment,MDAX,2026-06-30
+AMV0.DE,Aumovio,Automotive Technology,MDAX,2026-06-30
+KRN.DE,Krones,Manufacturing,MDAX,2026-06-30
+LEG.DE,LEG Immobilien,Real Estate,MDAX,2026-06-30
+TUI1.DE,TUI,Tourism,MDAX,2026-06-30
+FTK.DE,flatexDEGIRO,Financial Services,MDAX,2026-06-30
+PUM.DE,Puma,Apparel,MDAX,2026-06-30
+SZG.DE,Salzgitter,Steel,MDAX,2026-06-30
+SDF.DE,K+S,Mining,MDAX,2026-06-30
+FNTN.DE,Freenet,Telecommunication,MDAX,2026-06-30
+GBF.DE,Bilfinger,Industrial Services,MDAX,2026-06-30
+BOSS.DE,Hugo Boss,Apparel,MDAX,2026-06-30
+ELG.DE,Elmos Semiconductor,Semiconductors,MDAX,2026-06-30
+TEG.DE,TAG Immobilien,Real Estate,MDAX,2026-06-30
+JEN.DE,Jenoptik,Technology,MDAX,2026-06-30
+WAF.DE,Siltronic,Semiconductors,MDAX,2026-06-30
+AT1.DE,Aroundtown,Real Estate,MDAX,2026-06-30
+DEZ.DE,Deutz,Manufacturing,MDAX,2026-06-30
+SMHN.DE,Suess MicroTec,Semiconductor Equipment,MDAX,2026-06-30
+LXS.DE,Lanxess,Chemicals,MDAX,2026-06-30
