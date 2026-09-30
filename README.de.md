@@ -10,17 +10,17 @@ Das Projekt besteht aus zwei Teilen:
 
 ## Wichtigste Ergebnisse
 
-- **Rendite:** Der MDAX schlug den DAX im H1 2026 (**+2,83 %** vs. **+0,56 %**, Differenz **-2,27 Prozentpunkte**).
-- **Risiko:** Der MDAX trug ein höheres Risiko — annualisierte Volatilität von **22,1 %** vs. **18,7 %** beim DAX. Beim maximalen Drawdown muss man zwei Ebenen unterscheiden: auf **Indexebene** (die Kursreihe des Index selbst) lag er bei **-14,4 %** (MDAX) vs. **-12,3 %** (DAX); auf **Einzelwertebene** (das schwächste einzelne Unternehmen innerhalb des jeweiligen Index) lag er bei **-52,25 %** (MDAX) vs. **-50,21 %** (DAX). Die "Max Drawdown"-Karten im Power-BI-Dashboard zeigen die Einzelwertebene.
-- **Marktbreite:** Die Gewinne waren breit gestreut, nicht auf wenige Werte konzentriert — **55–56 %** der Unternehmen in beiden Indizes verzeichneten eine positive H1-Rendite.
-- **Extremwerte:** Die stärksten Performer waren Aixtron (**+201,0 %**, MDAX) und Infineon Technologies (**+108,96 %**, DAX). Die schwächsten waren KION Group (**-43,8 %**, MDAX) und Rheinmetall (**-37,2 %**, DAX).
+- **Rendite:** Der MDAX schlug den DAX im H1 2026 (**+3,89 %** vs. **+2,06 %**, Differenz **-1,83 Prozentpunkte**).
+- **Risiko:** Der MDAX trug ein höheres Risiko — annualisierte Volatilität von **22,1 %** vs. **18,8 %** beim DAX. Beim maximalen Drawdown muss man zwei Ebenen unterscheiden: auf **Indexebene** (die Kursreihe des Index selbst) lag er bei **-14,4 %** (MDAX) vs. **-12,3 %** (DAX); auf **Einzelwertebene** (das schwächste einzelne Unternehmen innerhalb des jeweiligen Index) lag er bei **-52,25 %** (MDAX) vs. **-50,21 %** (DAX). Die "Max Drawdown"-Karten im Power-BI-Dashboard zeigen die Einzelwertebene.
+- **Marktbreite:** **57,5–58 %** der Unternehmen in beiden Indizes verzeichneten eine positive H1-Rendite.
+- **Extremwerte:** Die stärksten Performer waren Aixtron (**+204,96 %**, MDAX) und Infineon Technologies (**+118,12 %**, DAX). Die schwächsten waren KION Group (**-42,38 %**, MDAX) und Rheinmetall (**-35,91 %**, DAX).
 - **Hinweis zur Indexzusammensetzung:** Hochtief wechselte am 22.06.2026 in den DAX und ersetzte Porsche SE, die in den MDAX wechselte. Beide Indizes werden mit ihrer Zusammensetzung nach diesem Wechsel modelliert (DAX: 40 / MDAX: 50).
 
 In diesem Projekt wurde keine Marktkapitalisierungsgewichtung berechnet — daher werden keine Aussagen darüber getroffen, welche einzelnen Unternehmen die Indexperformance konkret getrieben haben. Die obigen Ergebnisse beschreiben ausschließlich die Daten auf Unternehmensebene.
 
 ## Daten & Methodik
 
-- **Quelldaten:** tägliche OHLC-Kursdaten für den DAX-Index, den MDAX-Index und alle einzelnen Mitgliedsunternehmen beider Indizes, für den Zeitraum 30.12.2025 bis 30.06.2026.
+- **Quelldaten:** tägliche Daten zu bereinigtem Schlusskurs und Handelsvolumen für den DAX-Index, den MDAX-Index und alle einzelnen Mitgliedsunternehmen beider Indizes, für den Zeitraum 30.12.2025 bis 30.06.2026.
 - **Verarbeitung:** bereinigt und forward-filled in Python (pandas), mit abgeleiteten Kennzahlen je Unternehmen: Gesamtrendite, annualisierte Volatilität, maximaler Drawdown und Rang innerhalb des Index.
 - **Exporte:** vier CSV-Dateien speisen das Power-BI-Modell —
   - `daily_market_data.csv` — tägliche Kurse und Renditen, Indizes und Einzelwerte
@@ -37,7 +37,7 @@ Das Dashboard nutzt ein Sternschema (`Dim_Company`, `Dim_Date`, `Fact_DailyMarke
 | **1. Market Overview** | Indexierte Performance (Basis = 100), H1-Rendite-KPIs, monatliche Renditen je Index |
 | **2. Risk and Performance** | Bester/schlechtester Handelstag je Index, maximaler Drawdown, Rendite vs. Volatilität je Unternehmen |
 | **3. Market Breadth** | Anteil positiver Unternehmen, Index vs. Median-Rendite, Verteilung der Unternehmensrenditen |
-| **4. Sector Explorer** | Rendite und Marktanteil je Sektor, aufgeteilt nach DAX/MDAX, Top/Bottom 5 Sektoren |
+| **4. Sector Explorer** | Rendite und Anteil an der Unternehmensanzahl je Sektor, aufgeteilt nach DAX/MDAX, Top/Bottom 5 Sektoren |
 | **5. Company Explorer** | Vollständige Unternehmenstabelle mit Filtern (Index, Sektor, Unternehmen), Top/Bottom 5 Performer |
 
 ### Screenshots
@@ -58,14 +58,14 @@ Anteil der Unternehmen mit positiver H1-Rendite, Index-Rendite vs. Median-Rendit
 ![Market Breadth](images/03-market-breadth.png)
 
 #### 4. Sector Explorer (DAX)
-Top 5 / Bottom 5 Sektoren nach Rendite für den ausgewählten Index, plus eine Matrix, die Rendite und Marktanteil je Sektor für DAX und MDAX nebeneinander vergleicht. Index-Slicer auf DAX gesetzt.
+Top 5 / Bottom 5 Sektoren nach Rendite für den ausgewählten Index, plus eine Matrix, die Rendite und Anteil an der Unternehmensanzahl je Sektor für DAX und MDAX nebeneinander vergleicht. Index-Slicer auf DAX gesetzt.
 
 ![Sector Explorer](images/04-sector-explorer-dax.png)
 
 #### 5. Sector Explorer (MDAX)
 Dieselbe Seite wie oben, mit dem Index-Slicer auf MDAX umgeschaltet — zeigt die eigenen Top/Bottom-Sektoren des MDAX, während die Matrix unten weiterhin beide Indizes zeigt.
 
-![Sector Explorer Detail](images/04-sector-explorer-mdax.png)
+![Sector Explorer Detail](images/05-sector-explorer-mdax.png)
 
 #### 6. Company Explorer
 Vollständige Unternehmenstabelle, filterbar nach Index, Sektor und Unternehmen, plus Top-5-/Bottom-5-Performer-Diagramme.

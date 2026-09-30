@@ -10,17 +10,17 @@ The project has two parts:
 
 ## Key Findings
 
-- **Return:** MDAX outperformed DAX in H1 2026 (**+2.83%** vs. **+0.56%**, a difference of **-2.27 pp**).
-- **Risk:** MDAX carried higher risk — annualized volatility of **22.1%** vs. **18.7%** for DAX. Maximum drawdown can be read two ways: at the **index level** (the index's own price series), it was **-14.4%** (MDAX) vs. **-12.3%** (DAX); at the **constituent level** (the single worst-performing company within each index), it was **-52.25%** (MDAX) vs. **-50.21%** (DAX). The Power BI dashboard's "Max Drawdown" cards show the constituent-level figures.
-- **Breadth:** Gains were broad-based, not concentrated in a few names — **55–56%** of companies in both indices posted a positive H1 return.
-- **Extremes:** Strongest performers were Aixtron (**+201.0%**, MDAX) and Infineon Technologies (**+108.96%**, DAX). Weakest were KION Group (**-43.8%**, MDAX) and Rheinmetall (**-37.2%**, DAX).
+- **Return:** MDAX outperformed DAX in H1 2026 (**+3.89%** vs. **+2.06%**, a difference of **-1.83 pp**).
+- **Risk:** MDAX carried higher risk — annualized volatility of **22.1%** vs. **18.8%** for DAX. Maximum drawdown can be read two ways: at the **index level** (the index's own price series), it was **-14.4%** (MDAX) vs. **-12.3%** (DAX); at the **constituent level** (the single worst-performing company within each index), it was **-52.25%** (MDAX) vs. **-50.21%** (DAX). The Power BI dashboard's "Max Drawdown" cards show the constituent-level figures.
+- **Breadth:** **57.5–58%** of companies in both indices posted a positive H1 return.
+- **Extremes:** Strongest performers were Aixtron (**+204.96%**, MDAX) and Infineon Technologies (**+118.12%**, DAX). Weakest were KION Group (**-42.38%**, MDAX) and Rheinmetall (**-35.91%**, DAX).
 - **Index composition note:** Hochtief joined the DAX on 2026-06-22, replacing Porsche SE, which moved to the MDAX. Both indices are modeled with their post-swap composition (DAX: 40 / MDAX: 50).
 
 No market-cap weighting was computed in this project, so no claims are made about which specific companies drove index-level performance — the findings above describe the constituent-level data only.
 
 ## Data & Methodology
 
-- **Source data:** daily OHLC price data for the DAX index, the MDAX index, and all individual constituents of both, covering 2025-12-30 through 2026-06-30.
+- **Source data:** daily adjusted close and volume data for the DAX index, the MDAX index, and all individual constituents of both, covering 2025-12-30 through 2026-06-30.
 - **Processing:** cleaned and forward-filled in Python (pandas), with derived metrics computed per company: total return, annualized volatility, maximum drawdown, and rank within index.
 - **Exports:** four CSVs feed the Power BI model —
   - `daily_market_data.csv` — daily prices and returns, indices and constituents
@@ -37,7 +37,7 @@ The dashboard uses a star schema (`Dim_Company`, `Dim_Date`, `Fact_DailyMarketDa
 | **1. Market Overview** | Indexed performance (base = 100), H1 return KPIs, monthly returns by index |
 | **2. Risk and Performance** | Best/worst trading days per index, maximum drawdown, return vs. volatility by company |
 | **3. Market Breadth** | Share of positive companies, index vs. median return, distribution of company returns |
-| **4. Sector Explorer** | Sector-level return and market share, split by DAX/MDAX, top/bottom 5 sectors |
+| **4. Sector Explorer** | Sector-level return and share of companies, split by DAX/MDAX, top/bottom 5 sectors |
 | **5. Company Explorer** | Full company-level table with slicers (index, sector, company), top/bottom 5 performers |
 
 ### Screenshots
@@ -58,14 +58,14 @@ Share of companies with a positive H1 return, index return vs. median company re
 ![Market Breadth](images/03-market-breadth.png)
 
 #### 4. Sector Explorer (DAX)
-Top 5 / bottom 5 sectors by return for the selected index, plus a matrix comparing return and market share by sector across DAX and MDAX side by side. Index slicer set to DAX.
+Top 5 / bottom 5 sectors by return for the selected index, plus a matrix comparing return and share of companies by sector across DAX and MDAX side by side. Index slicer set to DAX.
 
 ![Sector Explorer](images/04-sector-explorer-dax.png)
 
 #### 5. Sector Explorer (MDAX)
 Same page as above, with the index slicer switched to MDAX — shows MDAX's own top/bottom performing sectors while the matrix at the bottom keeps both indices visible.
 
-![Sector Explorer detail](images/04-sector-explorer-mdax.png)
+![Sector Explorer detail](images/05-sector-explorer-mdax.png)
 
 #### 6. Company Explorer
 Full company-level table filterable by index, sector, and company, plus top 5 / bottom 5 performer charts.
