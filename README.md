@@ -83,6 +83,8 @@ The Power BI data model: `Dim_Company`, `Dim_Date`, `Fact_DailyMarketData`, `Fac
 - Power BI (DAX, Power Query, data modeling)
 - Claude (Anthropic) — used as an AI assistant during development (debugging, documentation)
 
-## Author
+---
 
-Amir ([@Amirhouschang](https://github.com/Amirhouschang))
+## Rights
+
+© 2026 Amirhoushang Rahmannejad. All rights reserved. You are welcome to read and review this project. Copying, modifying or redistributing it requires my written permission.
